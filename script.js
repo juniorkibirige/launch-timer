@@ -6,7 +6,7 @@ const minutes = document.querySelector('.minutes')
 const seconds = document.querySelector('.seconds')
 
 let check = []
-var countDownDate = new Date("Jul 17, 2024 15:37:25").getTime();
+var countDownDate = new Date("Jul 30, 2024 15:37:25").getTime();
 
 function countDown() {
     // Get today's date and time
