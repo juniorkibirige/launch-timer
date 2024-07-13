@@ -6,6 +6,7 @@ const minutes = document.querySelector('.minutes')
 const seconds = document.querySelector('.seconds')
 
 let check = []
+var distance = 830064;
 
 function countDown() {
     const times = [{}, {}, {}, {}]
@@ -65,12 +66,13 @@ function countDown() {
         days.parentElement.classList.add('flip')
     }
     if (seconds.dataset.before == '01' && minutes.dataset.before == '00' && hours.dataset.before == '00' && days.dataset.before == '00') {
-        localStorage.setItem('time', 830064)
+        localStorage.setItem('time', distance)
+
     }
 }
 
 if (!localStorage.getItem('time')) {
-    localStorage.setItem('time', 830064);
+    localStorage.setItem('time', distance);
 }
 
 countDown()
